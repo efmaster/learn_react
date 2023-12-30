@@ -51,7 +51,6 @@ export function UserItem({
       </Link>
     </Button>
   );
-  // <div key={user.id}>{user.username}</div>
 }
 
 export function UserItemSkeleton() {
