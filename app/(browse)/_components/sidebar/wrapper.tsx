@@ -6,6 +6,7 @@ import { cn } from "@/lib/utils";
 import { useSidebar } from "@/store/use-sidebar";
 
 import { ToggleSkeleton } from "./toggle";
+import { FollowingSkeleton } from "./following";
 import { RecommendedSkeleton } from "./recommended";
 
 interface WrapperProps {
@@ -20,6 +21,7 @@ export function Wrapper({ children }: WrapperProps) {
     return (
       <aside className="fixed left-0 z-50 flex h-full w-[70px] flex-col border-r border-[#2D2E35] bg-background lg:w-60">
         <ToggleSkeleton />
+        <FollowingSkeleton />
         <RecommendedSkeleton />
       </aside>
     );
